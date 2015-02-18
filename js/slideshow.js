@@ -1,12 +1,14 @@
 $( document ).ready(function() {
-
 	console.log( "ready!" );
+
+// Colourbox galleries
 
 	$(".news-gallery").colorbox({rel:'news-gallery'});
 	$(".slider-gallery").colorbox({rel:'slider-gallery'});
 
-	var isCompleted = false;
 
+// Slideshow that opens automatically on page load
+	var isCompleted = false;
 	$(".news-gallery:first").trigger("click");
 	var time = 0;
 	$(document).bind('cbox_complete', function(){

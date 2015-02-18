@@ -1,19 +1,25 @@
-/*********** General ***********/
+/******************************** GENERAL *********************************/
 
 h1, h2, h3, h4, h5, h6, p, ul {
 	margin: 0;
 	padding: 0;
 }
 
-.wrap {
-	background: url("../assets/background.png");
-}
-
 li {
 	list-style: none;
 }
 
-/*********** Header ***********/
+.wrap {
+	background: url("../assets/background.png");
+}
+
+/******************************** HEADER *********************************/
+
+header {
+	background: none!important;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
 
 header input {
 	border-radius: 10px!important;
@@ -31,12 +37,6 @@ header .has-form a {
 
 header .has-form a:hover {
 	opacity: 0.8;
-}
-
-header {
-	background: none!important;
-	padding-top: 40px;
-	padding-bottom: 40px;
 }
 
 header li {
@@ -61,11 +61,7 @@ header h2 {
 	margin-right: 30px;
 }
 
-/*********** Nav ***********/
-
-nav .title-area {
-	display: none;
-}
+/******************************** NAVBAR *********************************/
 
 nav {
 	border-radius: 7px;
@@ -73,6 +69,10 @@ nav {
 	margin-top: 40px!important;
 	box-shadow: 1px 1px 2px #000000;
 	background: url("../assets/pink-cover.png")!important;
+}
+
+nav .title-area {
+	display: none;
 }
 
 .top-bar.expanded .title-area {
@@ -118,7 +118,7 @@ nav h1 a {
 	font-weight: 800!important;
 }
 
-/********************** FRONT-CONTENT **********************/
+/******************************** FRONT-CONTENT *********************************/
 
 .front-content {
 	margin-top: 50px;
@@ -351,13 +351,10 @@ nav h1 a {
 	opacity: 0.7;
 }
 
-/********************** FOOTER **********************/
+/******************************** FOOTER *********************************/
 
 .copy {
 	font-size: 0.7em;
-/*	padding: 20px;*/
-/*	margin-top: 20px;*/
-/*	margin-bottom: 20px;*/
 	color: #76644d;
 }
 
@@ -386,7 +383,6 @@ footer a {
 
 
 
-
 @media screen and (max-width: 750px) {
 
 	nav .top-bar-section a {
@@ -401,6 +397,8 @@ footer a {
 
 
 @media screen and (max-width: 641px) {
+
+/********* Responsive - Header *********/
 	
 	nav .name a {
 		width: 100%!important;
@@ -416,6 +414,8 @@ footer a {
 	header .right {
 		display: none;
 	}
+
+/********* Responsive - Navbar *********/
 
 	nav {
 		border-radius: 0!important;
@@ -439,6 +439,8 @@ footer a {
 		padding-left: 0px!important;
 	}
 
+/********* Responsive - Front-content *********/
+
 	.front-content {
 		margin-top: 0px;
 		background-position: 0px -10px;
@@ -448,6 +450,8 @@ footer a {
 		display: none;
 	}
 
+
+/********* Responsive - Front-articles *********/
 
 	.front-articles {
 		background: none;
@@ -467,6 +471,9 @@ footer a {
 		background-size: cover;
 		border-radius: 10px;
 	}
+
+
+/********* Responsive - Footer *********/
 
 	footer {
 
