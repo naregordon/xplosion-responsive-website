@@ -68,7 +68,8 @@ nav {
 	overflow: hidden!important;
 	margin-top: 40px!important;
 	box-shadow: 1px 1px 2px #000000;
-	background: url("../assets/pink-cover.png")!important;
+	background: url("../assets/menu.png")no-repeat!important;
+	background-size: 101% 100%!important;
 }
 
 nav .title-area {
@@ -82,13 +83,14 @@ nav .title-area {
 nav li {
 	width: calc(100% / 6)!important;
 	text-align: center;
+	background: none!important;
 }
 
 nav  .top-bar-section a {
 	color: #fff;
 	display: block;
 	font-size: 0.7em!important;
-	background: url("../assets/pink-cover.png")!important;
+	background: none!important;
 }
 
 nav  .top-bar-section a:hover {
@@ -399,13 +401,6 @@ footer a {
 @media screen and (max-width: 641px) {
 
 /********* Responsive - Header *********/
-	
-	nav .name a {
-		width: 100%!important;
-		text-align: center!important;
-		float: left!important;
-		width: 155px!important;
-	}
 
 	header {
 		display: none;
@@ -420,6 +415,15 @@ footer a {
 	nav {
 		border-radius: 0!important;
 		margin-top: 0px!important;
+		background: url("../assets/pink-cover.png")no-repeat!important;
+		background-size: 100% 100%!important;
+	}
+
+	nav .name a {
+		width: 100%!important;
+		text-align: center!important;
+		float: left!important;
+		width: 155px!important;
 	}
 
 	nav .title-area {
@@ -466,10 +470,10 @@ footer a {
 
 /********* Responsive - Front-slider *********/
 
-.slider-btn {
-	height: 50px;
-	width: 25px;
-}
+	.slider-btn {
+		height: 50px;
+		width: 25px;
+	}
 
 /********* Responsive - Front-articles *********/
 
@@ -506,8 +510,11 @@ footer a {
 
 	footer li {
 		margin: 0;
-		width: calc(100%/4);
 		text-align: center;
+	}
+
+	footer li a {
+		margin: 0px 10px;
 	}
 
 	.copy {
