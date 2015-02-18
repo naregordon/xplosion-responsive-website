@@ -333,7 +333,7 @@ nav h1 a {
 }
 
 .aside-container .random li:before {
-	content: url("../assets/list-arrow.png") no-repeat;
+	content: url("../assets/list-arrow.png");
 	vertical-align: -3px!important;
 }
 
@@ -439,6 +439,7 @@ footer a {
 		padding-left: 0px!important;
 	}
 
+
 /********* Responsive - Front-content *********/
 
 	.front-content {
@@ -450,6 +451,25 @@ footer a {
 		display: none;
 	}
 
+	.front-presentation h1 {
+		font-size: 1.8em;
+	}
+
+	.front-presentation h2 {
+		font-size: 0.8em;
+	}
+
+	.front-presentation h3 {
+		font-size: 0.7em;
+		margin-top: 10px;
+	}
+
+/********* Responsive - Front-slider *********/
+
+.slider-btn {
+	height: 50px;
+	width: 25px;
+}
 
 /********* Responsive - Front-articles *********/
 
